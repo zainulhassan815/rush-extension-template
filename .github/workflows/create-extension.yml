@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
     env:
       NAME: ${{ inputs.name }}
       PACKAGE: ${{ inputs.package }}
@@ -61,8 +62,14 @@ jobs:
           git add -A
           git commit -m "Create the $NAME extension"
           git push
+
+      - name: Build the extension
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run build.yml --ref "$GITHUB_REF_NAME"
           {
-            echo "Created the $NAME extension."
+            echo "Created the $NAME extension. The **Build** workflow is building it now."
             echo
             echo "Next, open it in a codespace: **Code** → **Codespaces** → **Create codespace on main**."
           } >> "$GITHUB_STEP_SUMMARY"

@@ -12,7 +12,8 @@ anything. Everything happens on GitHub, in your browser.
      as `io.github.yourname`.
    - **Language:** Java or Kotlin.
 
-   After about a minute, your repository contains the extension's project.
+   After about a minute, your repository contains the extension's project, and the
+   **Build** workflow builds it. Its run page has the extension (`.aix`) to download.
 3. **Start working.** Click **Code** → **Codespaces** → **Create codespace on main**. VS
    Code opens in your browser, with everything needed to build the extension. Describe
    what you want to GitHub Copilot, or run `rush build` in the terminal yourself.

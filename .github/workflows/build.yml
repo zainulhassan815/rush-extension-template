@@ -2,7 +2,20 @@ name: Build
 
 on:
   push:
+    paths:
+      - rush.yml
+      - src/**
+      - assets/**
+      - deps/**
+      - res/**
   pull_request:
+    paths:
+      - rush.yml
+      - src/**
+      - assets/**
+      - deps/**
+      - res/**
+  workflow_dispatch:
 
 jobs:
   build:
