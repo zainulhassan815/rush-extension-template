@@ -18,6 +18,6 @@ anything. Everything happens on GitHub, in your browser.
    Code opens in your browser, with everything needed to build the extension. Describe
    what you want to GitHub Copilot, or run `rush build` in the terminal yourself.
 
-The project is made with [Rush](https://github.com/zainulhassan815/rush-cli). Its
-[guide](https://github.com/zainulhassan815/rush-cli/blob/main/docs/README.md) explains
+The project is made with [Rush](https://github.com/shreyashsaitwal/rush-cli). Its
+[guide](https://github.com/shreyashsaitwal/rush-cli/blob/main/docs/README.md) explains
 how extensions work, building and releasing them, and working with AI agents.

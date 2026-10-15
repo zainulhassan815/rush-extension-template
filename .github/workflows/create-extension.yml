@@ -41,7 +41,7 @@ jobs:
           [[ "$PACKAGE" =~ ^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+$ ]] ||
             fail "The package \"$PACKAGE\" must be lowercase words separated by dots, like io.github.yourname."
 
-      - uses: zainulhassan815/rush-cli@v2
+      - uses: shreyashsaitwal/rush-cli@v2
 
       - name: Create the project
         run: |
